@@ -1,0 +1,27 @@
+{
+    "name": "smit-backend/laravel-backup-vault",
+    "description": "Artisan package to compress, AES-256 encrypt, and stream large database dumps directly to AWS S3 storage.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\BackupVault\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\BackupVault\\PackageServiceProvider"
+            ]
+        }
+    }
+}
